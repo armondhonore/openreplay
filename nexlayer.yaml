@@ -2,10 +2,7 @@ application:
   name: openreplay
   pods:
   - name: app
-    image: openreplay/frontend:latest
+    image: public.ecr.aws/p1t3u8a3/frontend:v1.27.14
     path: /
     servicePorts:
-    - 3000
-    vars:
-      NODE_ENV: production
-      API_URL: "https://relaxed-weasel-openreplay.cloud.nexlayer.ai"
+    - 8080
